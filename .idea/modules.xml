@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BackEnd-Java.iml" filepath="$PROJECT_DIR$/.idea/BackEnd-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicioChainResponsability/exercicioChainResponsability.iml" filepath="$PROJECT_DIR$/exercicioChainResponsability/exercicioChainResponsability.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spotifyProxy/spotifyProxy.iml" filepath="$PROJECT_DIR$/spotifyProxy/spotifyProxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/tddCalcularPerimetro/tddCalcularPerimetro.iml" filepath="$PROJECT_DIR$/tddCalcularPerimetro/tddCalcularPerimetro.iml" />
     </modules>
   </component>
