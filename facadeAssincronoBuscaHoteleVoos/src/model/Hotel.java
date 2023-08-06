@@ -3,39 +3,37 @@ package model;
 import java.time.LocalDate;
 
 public class Hotel {
-    private LocalDate dataEntrada;
-    private LocalDate dataSaida;
-    private String cidade;
+    private String dataEntrada;
+    private String dataSaida;
+    private ENumHotel cidade;
 
-
-    public Hotel(LocalDate dataEntrada, LocalDate dataSaida, String cidade) {
+    public Hotel(String dataEntrada, String dataSaida, ENumHotel cidade) {
         this.dataEntrada = dataEntrada;
         this.dataSaida = dataSaida;
         this.cidade = cidade;
     }
 
-    public LocalDate getDataEntrada() {
+    public String getDataEntrada() {
         return dataEntrada;
     }
 
-    public void setDataEntrada(LocalDate dataEntrada) {
+    public void setDataEntrada(String dataEntrada) {
         this.dataEntrada = dataEntrada;
     }
 
-    public LocalDate getDataSaida() {
+    public String getDataSaida() {
         return dataSaida;
     }
 
-    public void setDataSaida(LocalDate dataSaida) {
+    public void setDataSaida(String dataSaida) {
         this.dataSaida = dataSaida;
     }
 
-    public String getCidade() {
+    public ENumHotel getCidade() {
         return cidade;
     }
 
-    public void setCidade(String cidade) {
+    public void setCidade(ENumHotel cidade) {
         this.cidade = cidade;
     }
-
 }

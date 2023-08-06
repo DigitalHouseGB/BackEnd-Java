@@ -3,47 +3,47 @@ package model;
 import java.time.LocalDate;
 
 public class Voos {
-    private String origem;
-    private LocalDate dataPartida;
-    private LocalDate dataRetorno;
-    private String destino;
+    private ENumHotel origem;
+    private String dataPartida;
+    private String dataRetorno;
+    private ENumHotel destino;
 
-    public Voos(String origem, LocalDate dataPartida, LocalDate dataRetorno, String destino) {
+    public Voos(ENumHotel origem, String dataPartida, String dataRetorno, ENumHotel destino) {
         this.origem = origem;
         this.dataPartida = dataPartida;
         this.dataRetorno = dataRetorno;
         this.destino = destino;
     }
 
-    public String getOrigem() {
+    public ENumHotel getOrigem() {
         return origem;
     }
 
-    public void setOrigem(String origem) {
+    public void setOrigem(ENumHotel origem) {
         this.origem = origem;
     }
 
-    public LocalDate getDataPartida() {
+    public String getDataPartida() {
         return dataPartida;
     }
 
-    public void setDataPartida(LocalDate dataPartida) {
+    public void setDataPartida(String dataPartida) {
         this.dataPartida = dataPartida;
     }
 
-    public LocalDate getDataRetorno() {
+    public String getDataRetorno() {
         return dataRetorno;
     }
 
-    public void setDataRetorno(LocalDate dataRetorno) {
+    public void setDataRetorno(String dataRetorno) {
         this.dataRetorno = dataRetorno;
     }
 
-    public String getDestino() {
+    public ENumHotel getDestino() {
         return destino;
     }
 
-    public void setDestino(String destino) {
+    public void setDestino(ENumHotel destino) {
         this.destino = destino;
     }
 }

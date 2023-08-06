@@ -18,8 +18,8 @@ class IBuscaHotelVooTest {
     private Voos voos;
     @BeforeEach
     void setup() {
-        hotel = new Hotel(LocalDate.of(2023, 8, 20), LocalDate.of(2023, 8, 30), "SAO_PAULO");
-        voos = new Voos("LINS", LocalDate.of(2023, 8, 20), LocalDate.of(2023, 8, 30), "SAO_PAULO");
+        hotel = new Hotel("AGO.", "AGO.", ENumHotel.SAO_PAULO);
+        voos = new Voos(ENumHotel.RIO_DE_JANEIRO, "AGO.", "AGO.", ENumHotel.SAO_PAULO);
 
     }
     @Test

@@ -15,18 +15,25 @@ public class FacadeBuscaHotelmpl implements IFacadeBuscaHotelVoo {
         this.apiVoos = new ApiVoos();
     }
 
+//    @Override
+//    public void buscaHotelVoo(Hotel hotel, Voos voo) {
+//        if (hotel.getCidade().equals(voo.getDestino())){
+//            if (hotel.getDataEntrada().equals(voo.getDataPartida())){
+//                if (hotel.getDataSaida().equals(voo.getDataRetorno())){
+//                    logger.info("Todos as datas coincidem seguir processo");
+//                }else{
+//                    logger.error("Data de Saida não coincide entre voo e hotel");
+//                }
+//            }else{
+//                logger.error("Data de Entrada não coincide entre voo e hotel");
+//            }
+//        }else{logger.error("Cidade não coincide entre voo e hotel");}
+//    }
+
+
     @Override
     public void buscaHotelVoo(Hotel hotel, Voos voo) {
-        if (hotel.getCidade().equals(voo.getDestino())){
-            if (hotel.getDataEntrada().equals(voo.getDataPartida())){
-                if (hotel.getDataSaida().equals(voo.getDataRetorno())){
-                    logger.info("Todos as datas coincidem seguir processo");
-                }else{
-                    logger.error("Data de Saida não coincide entre voo e hotel");
-                }
-            }else{
-                logger.error("Data de Entrada não coincide entre voo e hotel");
-            }
-        }else{logger.error("Cidade não coincide entre voo e hotel");}
+        apiHotel.buscaHotel(hotel);
+        apiVoos.buscaVoo(voo);
     }
 }
